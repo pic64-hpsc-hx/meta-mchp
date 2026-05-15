@@ -20,3 +20,9 @@ RRECOMMENDS:${KERNEL_PACKAGE_NAME}-base = ""
 PREFERRED_PROVIDER_virtual/bootloader = "u-boot-mchp"
 PREFERRED_VERSION_u-boot-mchp = "2024.07+p64h"
 UBOOT_MACHINE = "microchip_p64h_defconfig"
+
+# OpenSBI
+PREFERRED_VERSION_opensbi = "1.8.1"
+RISCV_SBI_FW_TEXT_START = "0x4000000000"
+RISCV_SBI_PLAT ?= "generic"
+RISCV_SBI_DEFCONFIG ?= "hpsc-defconfig"
