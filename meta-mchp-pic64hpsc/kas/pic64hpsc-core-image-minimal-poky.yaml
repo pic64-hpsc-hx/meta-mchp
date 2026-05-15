@@ -1,0 +1,29 @@
+header:
+  version: 4
+machine: pic64hpsc
+distro: poky
+target: core-image-minimal
+repos:
+  meta-mchp-common:
+    path: meta-mchp-common
+  meta-mchp-pic64hpsc:
+    path: meta-mchp-pic64hpsc
+  poky:
+    url: "https://git.yoctoproject.org/git/poky"
+    commit: 1d54d1c4736a114e1cecbe85a0306e3814d5ce70
+    path: layers/poky
+    layers:
+      meta:
+      meta-poky:
+  meta-openembedded:
+    url: "https://git.openembedded.org/meta-openembedded"
+    commit: ae7dfb12245c7f9b9a353499e2688015bd4e6413
+    path: layers/meta-openembedded
+    layers:
+      meta-oe:
+      meta-networking:
+      meta-python:
+local_conf_header:
+  build-history: |
+    INHERIT += "buildhistory"
+    BUILDHISTORY_COMMIT = "1"
