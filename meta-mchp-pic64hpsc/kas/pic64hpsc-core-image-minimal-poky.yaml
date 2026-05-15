@@ -24,6 +24,8 @@ repos:
       meta-networking:
       meta-python:
 local_conf_header:
+  root-login: |
+    IMAGE_FEATURES += "allow-root-login allow-empty-password empty-root-password"
   build-history: |
     INHERIT += "buildhistory"
     BUILDHISTORY_COMMIT = "1"
