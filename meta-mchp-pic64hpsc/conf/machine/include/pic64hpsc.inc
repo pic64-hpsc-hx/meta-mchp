@@ -15,3 +15,8 @@ KERNEL_IMAGETYPE = "Image"
 KBUILD_DEFCONFIG ?= "p64h_defconfig"
 # Don't include the kernel in /boot
 RRECOMMENDS:${KERNEL_PACKAGE_NAME}-base = ""
+
+# U-Boot
+PREFERRED_PROVIDER_virtual/bootloader = "u-boot-mchp"
+PREFERRED_VERSION_u-boot-mchp = "2024.07+p64h"
+UBOOT_MACHINE = "microchip_p64h_defconfig"
