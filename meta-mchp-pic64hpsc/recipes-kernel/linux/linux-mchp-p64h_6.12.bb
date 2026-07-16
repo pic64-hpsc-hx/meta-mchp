@@ -13,7 +13,7 @@ KERNEL_VERSION_SANITY_SKIP="1"
 LINUX_VERSION_EXTENSION=""
 
 S = "${WORKDIR}/git"
-SRC_URI = "git://github.com/pic64-hpsc-hx/linux.git;protocol=ssh;branch=${KBRANCH}"
+SRC_URI = "git://github.com/pic64-hpsc-hx/linux.git;protocol=http;branch=${KBRANCH}"
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 
