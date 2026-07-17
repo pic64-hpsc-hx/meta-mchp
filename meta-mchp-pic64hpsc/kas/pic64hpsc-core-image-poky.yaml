@@ -2,7 +2,7 @@ header:
   version: 4
 machine: pic64hpsc
 distro: poky
-target: core-image-minimal
+target: core-image-base
 repos:
   meta-mchp-common:
     path: meta-mchp-common

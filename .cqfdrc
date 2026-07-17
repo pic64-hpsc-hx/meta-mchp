@@ -3,6 +3,6 @@ org='microchip'
 name='pic64hpsc-yocto'
 
 [build]
-command='kas build meta-mchp-pic64hpsc/kas/pic64hpsc-core-image-minimal-poky.yaml'
+command='kas build meta-mchp-pic64hpsc/kas/pic64hpsc-core-image-poky.yaml'
 docker_build_args='--network=host'
 docker_run_args='--network=host'
