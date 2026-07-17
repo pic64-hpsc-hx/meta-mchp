@@ -16,6 +16,22 @@ KBUILD_DEFCONFIG ?= "p64h_defconfig"
 # Don't include the kernel in /boot
 RRECOMMENDS:${KERNEL_PACKAGE_NAME}-base = ""
 
+MACHINE_EXTRA_RRECOMMENDS = " \
+    kernel-module-grovf-rdma \
+    kernel-module-p64h-hpt \
+    kernel-module-p64h-ipc-demo \
+    kernel-module-p64h-pcie \
+    kernel-module-p64h-pie \
+    kernel-module-p64h-uio \
+    kernel-module-spi-microchip-p64h-xspi \
+    kernel-module-x288-l2pf \
+"
+
+MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = " \
+    kernel-module-p64h-gpio \
+    kernel-module-p64h-wdt \
+"
+
 # U-Boot
 PREFERRED_PROVIDER_virtual/bootloader = "u-boot-mchp"
 PREFERRED_VERSION_u-boot-mchp = "2024.07+p64h"
