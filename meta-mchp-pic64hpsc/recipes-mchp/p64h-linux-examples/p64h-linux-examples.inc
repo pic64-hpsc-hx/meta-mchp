@@ -1,5 +1,5 @@
 SRC_URI = "git://git@github.com/pic64-hpsc-hx/p64h-linux-examples.git;protocol=ssh;nobranch=1"
-SRCREV = "ab99b23a95004b3835f86a0b4f71158b9761ad2e"
+SRCREV = "029a52fbdae31b7e1fb9c9bc3d7608b4c4d0fa57"
 
 S = "${WORKDIR}/git"
 
