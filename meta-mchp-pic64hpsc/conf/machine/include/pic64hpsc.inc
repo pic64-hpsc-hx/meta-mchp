@@ -10,7 +10,7 @@ DEFAULTTUNE = "riscv64"
 
 # Kernel
 PREFERRED_PROVIDER_virtual/kernel:pic64hpsc = "linux-mchp-p64h"
-PREFERRED_VERSION_linux-mchp = "6.12%"
+PREFERRED_VERSION_linux-mchp = "6.18%"
 KERNEL_IMAGETYPE = "Image"
 KBUILD_DEFCONFIG ?= "p64h_defconfig"
 # Don't include the kernel in /boot
