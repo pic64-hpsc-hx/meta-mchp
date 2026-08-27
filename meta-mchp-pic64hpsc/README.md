@@ -15,7 +15,7 @@ If you already have a yocto workspace, clone this repository, add
 ## New Yocto build
 
 If you do not already have a yocto workspace, this repository also provides a
-KAS [1] configuration for core-image-minimal using the poky distribution and the
+KAS [1] configuration for a demo image using the poky distribution and the
 pic64hpsc machine.
 
 If using this KAS configuration, it is recommended to build it in the docker
