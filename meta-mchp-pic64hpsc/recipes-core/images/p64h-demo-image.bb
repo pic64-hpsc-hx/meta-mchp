@@ -7,3 +7,5 @@ inherit core-image
 # name. Fix it so that these tools don't break.
 #
 IMAGE_BASENAME = "core-image-base"
+
+IMAGE_FEATURES += "ssh-server-dropbear"
