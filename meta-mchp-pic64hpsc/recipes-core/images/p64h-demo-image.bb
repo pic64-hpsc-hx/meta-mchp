@@ -9,3 +9,11 @@ inherit core-image
 IMAGE_BASENAME = "core-image-base"
 
 IMAGE_FEATURES += "ssh-server-dropbear"
+
+# Utilities for system administration and device configuration
+IMAGE_INSTALL += "\
+    util-linux \
+    libgpiod-tools \
+    i2c-tools \
+    pciutils \
+"
