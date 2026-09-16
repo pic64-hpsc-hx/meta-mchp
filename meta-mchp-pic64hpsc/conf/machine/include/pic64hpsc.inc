@@ -42,3 +42,8 @@ PREFERRED_VERSION_opensbi = "1.8.1"
 RISCV_SBI_FW_TEXT_START = "0x4000000000"
 RISCV_SBI_PLAT ?= "generic"
 RISCV_SBI_DEFCONFIG ?= "hpsc-defconfig"
+
+# RDMA
+PACKAGECONFIG:append:pn-iproute2 = " rdma"
+SRC_URI:pn-rdma-core = "git://git@github.com/pic64-hpsc-hx/rdma-core;branch=v57.0+grvf;protocol=ssh"
+SRCREV:pn-rdma-core = "b564723b27a51dc2d223a228398009be4b640604"
