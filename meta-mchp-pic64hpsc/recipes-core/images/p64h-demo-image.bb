@@ -11,8 +11,20 @@ IMAGE_BASENAME = "core-image-base"
 IMAGE_FEATURES += "ssh-server-dropbear"
 
 # Utilities for system administration and device configuration
-IMAGE_INSTALL += "\
-    util-linux \
+IMAGE_INSTALL += " \
+    util-linux-wdctl \
+    util-linux-fdisk \
+    util-linux-lscpu \
+    util-linux-hwclock \
+    util-linux-dmesg \
+    util-linux-findmnt \
+    util-linux-chrt \
+    util-linux-mount \
+    util-linux-fsck \
+    util-linux-mkfs \
+    mtd-utils \
+    mmc-utils \
+    e2fsprogs \
     libgpiod-tools \
     i2c-tools \
     pciutils \
