@@ -28,4 +28,5 @@ IMAGE_INSTALL += " \
     libgpiod-tools \
     i2c-tools \
     pciutils \
+    linuxptp \
 "
