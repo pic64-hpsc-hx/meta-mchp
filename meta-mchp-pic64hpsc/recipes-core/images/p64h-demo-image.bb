@@ -30,3 +30,14 @@ IMAGE_INSTALL += " \
     pciutils \
     linuxptp \
 "
+
+# Ethernet testing utilities
+IMAGE_INSTALL += "\
+    ethtool \
+    iperf3 \
+    iproute2 \
+    iproute2-rdma \
+    iputils-ping \
+    rdma-core \
+    tcpdump \
+"
